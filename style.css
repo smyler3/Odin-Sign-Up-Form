@@ -18,26 +18,55 @@ body {
     display: flex;
     justify-content: stretch;
     align-items: stretch;
-    width: 70%;
+    width: 60%;
     background-color: cadetblue;
 }
 
 .splash {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: start;
-    padding-top: 25vh;
-    width: 35%;
+    padding-top: 20vh;
+    width: 40%;
+    background-image: url(./images/dragonfruit.jpg);
+    background-position: center;
     background-color: aquamarine;
 }
 
-.splash-text {
+.splash-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding:  2vw;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.splash-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: whitesmoke;
-    background-color: black;
-    opacity: 50%;
+    height: 100%;
+}
+
+.splash-logo {
+    height: 100%;
+    width: auto;
+}
+
+.splash-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.splash-footer-text {
+
 }
 
 .content {
