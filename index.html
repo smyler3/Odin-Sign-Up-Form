@@ -10,15 +10,16 @@
 <body>
     <div class="page-wrapper">
         <span class="splash">
+            <img src="./images/dragonfruit.jpg" class="splash-image">
             <span class="splash-content">
                 <img class="splash-logo" src="./images/White_Dragon-removebg-preview.png" alt="Dragon Logo">
                 <span class="splash-text">
-                    <h1>Dragon Day Spa</h1>
+                    <h1>Dragon Fruits</h1>
                 </span>
             </span>
             <footer class="splash-footer">
-                <p class="splash-footer-text">Photo by <a href="https://unsplash.com/@allecgomes">Allec Gomes</a> on <a href="https://unsplash.com/">Unsplash</a>.</p>
-                <p class="splash-footer-text">Logo altered from <a href="https://www.vecteezy.com/free-vector/dragon-head">Vecteezy</a> Design</p>
+                <p class="splash-footer-text">Photo by <a href="https://unsplash.com/@allecgomes" class="splash-link">Allec Gomes</a> on <a href="https://unsplash.com/" class="splash-link">Unsplash</a>.</p>
+                <p class="splash-footer-text">Logo altered from <a href="https://www.vecteezy.com/free-vector/dragon-head" class="splash-link">Vecteezy</a> Design</p>
             </footer>
         </span>
         <span class="content">
@@ -27,29 +28,46 @@
                 <h2>You <i>know</i> you want to.</h2>
             </div>
             <div class="content-form">
-                <form action="" method="post">
-                    <h2>Relaxation a few clicks away</h2>
-                    <label for="firstname">First Name</label>
-                    <input id="firstname" type="text" name="first">
+                <form action="" method="post" class="sign-up-form">
+                    <h2>Only a few more clicks!</h2>
+                    <span>
+                        <span class="input-field">
+                            <label for="firstname">FIRST NAME</label>
+                            <input id="firstname" type="text" name="first">
+                        </span>
+                        <span class="input-field">
+                            <label for="lasttname">LAST NAME</label>
+                            <input id="lastname" type="text" name="last">
+                        </span>
+                    </span>
 
-                    <label for="lasttname">Last Name</label>
-                    <input id="lastname" type="text" name="last">
-
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email">
-
-                    <label for="number">Phone Number</label>
-                    <input id="number" type="tel" name="phonenum">
+                    <span>
+                        <span class="input-field">
+                            <label for="email">EMAIL</label>
+                            <input id="email" type="email" name="email">
+                        </span>
+                        <span class="input-field">
+                            <label for="number">PHONE NUMBER</label>
+                            <input id="number" type="tel" name="phonenum">
+                        </span>
+                    </span>
                     
-                    <label for="password">Password</label>
-                    <input id="password" type="password" name="pass">
-
-                    <label for="cpassword">Confirm Password</label>
-                    <input id="cpassword" type="password" name="cpass">
+                    <span>
+                        <span class="input-field input-error">
+                            <label for="password">PASSWORD</label>
+                            <input id="password" type="password" name="pass" class="input-error" required>
+                        </span>
+                        <span class="input-field input-error">
+                            <label for="cpassword">CONFIRM PASSWORD</label>
+                            <input id="cpassword" type="password" name="cpass" class="input-error" required>
+                        </span>
+                    </span>
                 </form>
             </div>
-            <div class="content-footer">
-            </div>
+            <span class="content-footer">
+                <button type="submit" class="sign-up-submit">Create Account</button>
+                <p>Already have an account? <a href="./index.html" class="login-link">Log In</a></p>
+            </span>
         </span>
     </div>
 </body>
