@@ -9,20 +9,20 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <span class="splash">
+        <div class="splash">
             <img src="./images/dragonfruit.jpg" class="splash-image">
-            <span class="splash-content">
+            <div class="splash-content">
                 <img class="splash-logo" src="./images/White_Dragon-removebg-preview.png" alt="Dragon Logo">
                 <span class="splash-text">
                     <h1>Dragon Fruits</h1>
                 </span>
-            </span>
+            </div>
             <footer class="splash-footer">
                 <p class="splash-footer-text">Photo by <a href="https://unsplash.com/@allecgomes" class="splash-link">Allec Gomes</a> on <a href="https://unsplash.com/" class="splash-link">Unsplash</a>.</p>
                 <p class="splash-footer-text">Logo altered from <a href="https://www.vecteezy.com/free-vector/dragon-head" class="splash-link">Vecteezy</a> Design</p>
             </footer>
-        </span>
-        <span class="content">
+        </div>
+        <div class="content">
             <div class="content-header">
                 <h2>This is not a real online service! You know you need something like this in your life to realize your deepest dreams. Sign up <i>now</i> to get started.</h2>
                 <h2>You <i>know</i> you want to.</h2>
@@ -53,22 +53,24 @@
                     </span>
                     
                     <span>
-                        <span class="input-field input-error">
+                        <span class="input-field password-field input-error">
                             <label for="password">PASSWORD</label>
-                            <input id="password" type="password" name="pass" class="input-error" required>
+                            <input id="password" type="password" name="pass" class="input-error" minlength="8" required>
+                            <div class="password-tooltip">Password must have at least 8 characters</div>
                         </span>
-                        <span class="input-field input-error">
+                        <span class="input-field password-field">
                             <label for="cpassword">CONFIRM PASSWORD</label>
-                            <input id="cpassword" type="password" name="cpass" class="input-error" required>
+                            <input id="cpassword" type="password" name="cpass" class="input-error" minlength="8" required>
+                            <div class="password-tooltip">Password must have at least 8 characters</div>
                         </span>
                     </span>
                 </form>
             </div>
-            <span class="content-footer">
+            <div class="content-footer">
                 <button type="submit" class="sign-up-submit">Create Account</button>
                 <p>Already have an account? <a href="./index.html" class="login-link">Log In</a></p>
-            </span>
-        </span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
