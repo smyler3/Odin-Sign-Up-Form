@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up-Form</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
                 <h2>You <i>know</i> you want to.</h2>
             </div>
             <div class="content-form">
-                <form action="" method="post" class="sign-up-form">
+                <form action="" method="post" id="sign-up-form" class="sign-up-form">
                     <h2>Only a few more clicks!</h2>
                     <span>
                         <span class="input-field">
@@ -36,7 +37,7 @@
                             <input id="firstname" type="text" name="first">
                         </span>
                         <span class="input-field">
-                            <label for="lasttname">LAST NAME</label>
+                            <label for="lastname">LAST NAME</label>
                             <input id="lastname" type="text" name="last">
                         </span>
                     </span>
@@ -55,19 +56,17 @@
                     <span>
                         <span class="input-field password-field input-error">
                             <label for="password">PASSWORD</label>
-                            <input id="password" type="password" name="pass" class="input-error" minlength="8" required>
-                            <div class="password-tooltip">Password must have at least 8 characters</div>
+                            <input id="password" type="password" name="pass" required>
                         </span>
                         <span class="input-field password-field">
                             <label for="cpassword">CONFIRM PASSWORD</label>
-                            <input id="cpassword" type="password" name="cpass" class="input-error" minlength="8" required>
-                            <div class="password-tooltip">Password must have at least 8 characters</div>
+                            <input id="cpassword" type="password" name="cpass" required>
                         </span>
                     </span>
                 </form>
             </div>
             <div class="content-footer">
-                <button type="submit" class="sign-up-submit">Create Account</button>
+                <button for="sign-up-form" class="sign-up-btn">Create Account</button>
                 <p>Already have an account? <a href="./index.html" class="login-link">Log In</a></p>
             </div>
         </div>

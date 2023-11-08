@@ -231,7 +231,7 @@ input[type="password"]:focus + .password-tooltip {
     padding-top: 2rem;
 }
 
-.sign-up-submit {
+.sign-up-btn {
     padding: 1rem 2.5rem;
     color: #fefefe;
     font-size: medium;
