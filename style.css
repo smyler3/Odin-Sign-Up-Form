@@ -129,8 +129,8 @@ body {
 
 .content-form {
     flex: 1;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     background-color: #ffffff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.20);
     z-index: 10;
@@ -182,6 +182,8 @@ input:invalid,
 }
 /* Displays error message for incorrect passwords */
 .input-error::after {
+    position: absolute;
+    top: 47px;
     content: "* Passwords do not match";
     display: inline-block;
     color: #FD0000;
@@ -213,6 +215,11 @@ input:invalid,
     .password-tooltip {
         top: 10px;
         left: 275px;
+    }
+
+    .content-form {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
     }
 }
 
